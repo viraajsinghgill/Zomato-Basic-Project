@@ -4,55 +4,55 @@
 }
 
 body {
-    font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+  font-family: "Merriweather", serif;
+  background-color: #f9fafc;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
 }
 
-.navbar__brand{
-    width:100px;
+.navbar__brand {
+  width: 100px;
 }
-.navbar__logo{
-    width:100%;
-}
-
-.nav__item{
-    /* gradient is used so that we can applly particular set of color */
-    background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    );
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    font-weight: 600;
-}
-.nav__item:hover{
-   border: 2px solid #ff6767;
-   cursor: pointer;
+.navbar__logo {
+  width: 100%;
 }
 
-@media (min-width:768px){
-    .navbar{
-        justify-content: space-between;
-        padding: 10px 30px;
-    }
+.nav__item {
+  /* gradient is used so that we can applly particular set of color */
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.nav__item:hover {
+  border: 2px solid #ff6767;
+  cursor: pointer;
 }
 
-@media (min-width: 1024){
-    .navbar__brand{
-        width:150px;
-    }
-    .nav__item{
-        padding: 20px;
-    }
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: 1024) {
+  .navbar__brand {
+    width: 150px;
+  }
+  .nav__item {
+    padding: 20px;
+  }
 }
