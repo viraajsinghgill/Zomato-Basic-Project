@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title></title>
+    <title>Zomato landing page</title>
   </head>
   <body>
     <header>
@@ -18,9 +18,32 @@
           <img src="assets/logo.png" alt="logo" class="navbar__logo" />
         </div>
         <div class="navbar__nav__items">
-          <button class="button__primary">Order Food</button>
+            <div class="nav__item">
+          <button class="button__primary hide__mobile">Order Food</button>
+          <button
+              class="button__primary hamburger__menu mobile__only"
+              id="hamburgermenu"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+          </div>
         </div>
-      </nav>
+    </nav>
+        <div class="mobile__navbar__items mobile__only hamburger__menu__close">
+            <ul>
+              <li class="nav__item">Products</li>
+              <li class="nav__item">Restaurants</li>
+              <li class="nav__item">Pricing</li>
+              <li class="nav__item">About Us</li>
+            </ul>
+    
+            <div class="nav__item">
+              <button class="button__primary">Order Food</button>
+            </div>
+          </div>
+      
     </header>
     <main class="container">
       <!-- Hero Section -->
@@ -36,17 +59,20 @@
         </div>
       </section>
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <!-- Explore menu -->
       <section class="explore__menu__container">
-        <h1 class="explore__menu__text">Explore Our Menu</h1>
-        <div class="explore__menu__gradient__bg">
-
-        </div>
+        <h1
+          class="explore__menu__text"
+          style="text-align: center; font-size: 2.5rem"
+        >
+          Explore Our Menu
+        </h1>
+        <div class="explore__menu__gradient__bg"></div>
         <div class="explore__menu__lists">
           <!-- Burger -->
           <div class="food__card">
@@ -94,7 +120,83 @@
             </div>
           </div>
         </div>
+        <div class="food__list__view__more">View More</div>
       </section>
+      <!-- restraunt section -->
+      <section class="restaurant__list__container">
+        <div class="restaurant__list__text">
+          <h3 class="explore__menu__text">Order From 100s of restaurants</h3>
+        </div>
+        <div class="restaurant__list__images_container">
+          <div class="restaurant__list__row1">
+            <div>
+              <img
+                src="assets/restaurant1.jpg"
+                alt="restaurant1"
+                class="restaurant1"
+              />
+            </div>
+            <div>
+              <img
+                src="assets/restaurant2.jpg"
+                alt="restaurant2"
+                class="restaurant2"
+              />
+            </div>
+          </div>
+          <div class="restaurant__list__row2">
+            <img
+              src="assets/restaurant3.jpg"
+              alt="restaurant3"
+              class="restaurant3"
+            />
+            <img
+              src="assets/restaurant4.jpg"
+              alt="restaurant4"
+              class="restaurant4"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- email section -->
+      <section class="email__subscribe__container">
+        <div>
+          <h1 class="explore__menu__text">Stay Updated</h1>
+          <div class="email__subscribe__input__field">
+            <div>
+              <input
+                type="email"
+                placeholder="email@gmail.com"
+                class="email__input"
+              />
+            </div>
+
+            <button class="button__primary">Get Updates</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- quote section -->
+      <section class="quote__container">
+        <div class="quote__image__overlay"></div>
+        <h3 class="quote__image__text">
+          When a man's stomach is full it makes no difference whetherhe is rich
+          or poor.
+        </h3>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <img src="assets/logo.png" alt="logo">
+        <ul>
+            <li>Pricing</li>
+            <li>Terms and Condition</li>
+            <li>Partnership</li>
+            <li>Career</li>
+            <li>Contact</li>
+        </ul>
+      </footer>
     </main>
   </body>
 </html>
